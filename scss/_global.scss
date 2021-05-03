@@ -1,0 +1,91 @@
+body{
+    display: block;
+    background-color: $lightgray;
+    font-size: 15px;
+    
+}
+
+.main{
+    display: flex;
+    font-family: $lexend;
+    color: $transwhite;
+    margin: 150px 230px;
+    justify-content: center;
+
+
+    .content p{
+        display: inline-block;
+        height: 100px;
+    }
+
+
+    h1{
+        font-family: $bsd;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color:$lightgray;
+    }
+
+
+    button{
+        margin-top: 80px;
+        font-family: $lexend;
+        border: 2px solid $lightgray;
+        border-radius: 25px;
+        padding: 1rem 2rem;
+        background-color: $lightgray;
+        color: inherit;
+        
+        
+        &:hover {
+            cursor: pointer;
+            background-color: transparent;
+            
+        }
+    }
+
+    .content:nth-child(1){
+        background-color: $borange ;
+        padding: 45px ;
+        border-radius: 8px 0 0 8px;
+        
+        button{
+            color: $borange;
+            &:hover{
+                color: $transwhite;
+            }
+        }
+        
+
+    }
+
+    .content:nth-child(2){
+        background-color: $dcyan ;
+        padding: 45px ;
+
+        button{
+            color: $dcyan;
+            &:hover{
+                color: $transwhite;
+            }
+        }
+
+    }
+
+    .content:nth-child(3){
+        background-color: $vdcyan ;
+        padding: 45px ;
+        border-radius: 0 8px 8px 0;
+        
+        button{
+            color: $vdcyan;
+            &:hover{
+                color: $transwhite;
+            }
+        }
+
+
+    }
+    
+}
+

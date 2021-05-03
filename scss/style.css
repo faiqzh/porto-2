@@ -1,0 +1,113 @@
+body {
+  display: block;
+  background-color: #f2f2f2;
+  font-size: 15px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: "Lexend Deca", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 150px 230px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .content p {
+  display: inline-block;
+  height: 100px;
+}
+
+.main h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: #f2f2f2;
+}
+
+.main button {
+  margin-top: 80px;
+  font-family: "Lexend Deca", sans-serif;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+  padding: 1rem 2rem;
+  background-color: #f2f2f2;
+  color: inherit;
+}
+
+.main button:hover {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.main .content:nth-child(1) {
+  background-color: #e38826;
+  padding: 45px;
+  border-radius: 8px 0 0 8px;
+}
+
+.main .content:nth-child(1) button {
+  color: #e38826;
+}
+
+.main .content:nth-child(1) button:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main .content:nth-child(2) {
+  background-color: #006970;
+  padding: 45px;
+}
+
+.main .content:nth-child(2) button {
+  color: #006970;
+}
+
+.main .content:nth-child(2) button:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.main .content:nth-child(3) {
+  background-color: #004241;
+  padding: 45px;
+  border-radius: 0 8px 8px 0;
+}
+
+.main .content:nth-child(3) button {
+  color: #004241;
+}
+
+.main .content:nth-child(3) button:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (max-width: 719px) {
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 90px 25px;
+  }
+  .main .content:nth-child(1) {
+    border-radius: 8px 8px 0 0;
+  }
+  .main .content:nth-child(3) {
+    border-radius: 0 0 8px 8px;
+  }
+  .main .content p {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .main button {
+    margin: 0px;
+  }
+  .main h1 {
+    margin-bottom: auto;
+  }
+}
+/*# sourceMappingURL=style.css.map */
